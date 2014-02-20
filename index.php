@@ -1,14 +1,15 @@
-<?php include_once("includes/header.php") ?>
-	<div class="container">
-		<div class="form_container">
-			<form action="core/process.php" method="post" enctype="multipart/form-data">
-				<label for="uploadName">uploader name</label>
-				<input type="text" id="uploadName" name="uploadName" placeholder="uploadName">
-				<label for="img">image</label>
-				<input type="file" name="img" id="img">
-				<input type="submit" value="submit">
-			</form>
-		</div>
-	</div>
-</body>
-</html>
+<?php 
+include_once("includes/header.php");
+?>
+<h1>upload image</h1>
+<div class="upload_form">
+	<form action="includes/process.php" method="post" enctype="multipart/form-data">
+		<label for="uploadName">upload name</label>
+		<input type="text" name="uploadName" id="uploadName" />
+		<label for="uploadFile">image</label>
+		<input type="file" name="uploadFile" id="uploadFile" />
+		<input type="submit" value="submit" />
+	</form>
+</div>
+<?php
+include_once("includes/footer.php");
