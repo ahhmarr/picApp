@@ -1,4 +1,5 @@
 <?php include_once("includes/header.php") ?>
+<h1>Gallery</h1>
 <div class="gallery">
 	<?php $all=$db->query("select * from pic") ?>
 	<?php while($ans=$all->fetch_assoc()): ?>
